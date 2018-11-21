@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/11/21 13:38:11 by qhetting          #+#    #+#             */
+/*   Updated: 2018/11/21 13:45:21 by qhetting         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 void ft_putchar(char c);
 void ft_is_negative(int n)
 {
@@ -5,6 +17,6 @@ void ft_is_negative(int n)
     {
         ft_putchar('P');
     }
-    else 
-        ft_putchar('N');        
+    else
+        ft_putchar('N');
 }

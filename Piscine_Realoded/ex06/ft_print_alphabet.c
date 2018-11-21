@@ -2,7 +2,7 @@
 
 void ft_putchar(char c);
 
-int main()
+void ft_print_alphabet(void)
 {
 	char ch = 'a'-1;
 	while (++ch <= 'z')
