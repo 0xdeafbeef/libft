@@ -1,4 +1,0 @@
-/home/odm3n/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4892.24/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/odm3n/Documents/42/Piscine_Realoded/ex06
--- Configuring done
--- Generating done
--- Build files have been written to: /home/odm3n/Documents/42/Piscine_Realoded/ex06/cmake-build-debug

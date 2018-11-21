@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/21 16:53:19 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/21 19:09:51 by qhetting         ###   ########.fr       */
+/*   Created: 2018/11/21 21:23:53 by qhetting          #+#    #+#             */
+/*   Updated: 2018/11/21 21:26:46 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(char *str)
-{
-	int len;
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
-	len = 0;
-	while (*str)
-	{
-		str++;
-		len++;
-	}
-	return (len);
-}
+typedef	struct	s_point
+{
+	int x;
+	int y;
+}				t_point;
+
+#endif

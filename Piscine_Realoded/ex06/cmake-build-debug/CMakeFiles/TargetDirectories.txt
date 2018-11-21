@@ -1,3 +1,0 @@
-/home/odm3n/Documents/42/Piscine_Realoded/ex06/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/odm3n/Documents/42/Piscine_Realoded/ex06/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/odm3n/Documents/42/Piscine_Realoded/ex06/cmake-build-debug/CMakeFiles/ex06.dir

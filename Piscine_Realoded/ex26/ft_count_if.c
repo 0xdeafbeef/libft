@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/21 16:53:19 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/21 19:09:51 by qhetting         ###   ########.fr       */
+/*   Created: 2018/11/21 22:37:17 by qhetting          #+#    #+#             */
+/*   Updated: 2018/11/21 22:38:17 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(char *str)
+int		ft_count_if(char **tab, int (*f)(char *))
 {
-	int len;
+	int i;
+	int counter;
 
-	len = 0;
-	while (*str)
+	i = 0;
+	counter = 0;
+	while (tab[i])
 	{
-		str++;
-		len++;
+		if (f(tab[i]))
+			counter++;
+		i++;
 	}
-	return (len);
+	return (counter);
 }

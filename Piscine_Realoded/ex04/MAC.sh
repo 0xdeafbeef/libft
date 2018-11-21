@@ -1,2 +1,2 @@
-#!/bin/bash
-ifconfig -a | grep HWaddr | cut -d " " -f9
+ifconfig | grep '..:..:..:..:..:..' | sed "s/ether//" | sed "s/[[:space:]]//g"
+

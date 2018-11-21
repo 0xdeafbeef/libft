@@ -1,24 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/21 16:53:19 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/21 19:09:51 by qhetting         ###   ########.fr       */
+/*   Created: 2018/11/21 20:40:44 by qhetting          #+#    #+#             */
+/*   Updated: 2018/11/21 20:59:23 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(char *str)
-{
-	int len;
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
-	len = 0;
-	while (*str)
-	{
-		str++;
-		len++;
-	}
-	return (len);
-}
+# define ABS(Value) Value>0?Value:-Value
+#endif

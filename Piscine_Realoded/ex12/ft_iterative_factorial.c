@@ -3,26 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
+/*   By: qhetting <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 13:45:01 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/21 13:45:12 by qhetting         ###   ########.fr       */
+/*   Updated: 2018/11/21 19:02:17 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_iterative_factorial(int nb)
 {
-	int	i;
-	int	f;
+	int i;
+	int response;
 
-	if (nb >= 2)
-	{
-		i = 0;
-		f = nb;
-		while (++i < nb)
-			f = f * (nb - i);
-		return (f);
-	}
-	else
+	if (nb < 0 || nb >= 13)
+		return (0);
+	if (nb == 0)
 		return (1);
+	i = 1;
+	response = 1;
+	while (i <= nb)
+	{
+		response *= i;
+		i++;
+	}
+	return (response);
 }
