@@ -3,19 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
+/*   By: qhetting <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 13:37:20 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/21 13:45:17 by qhetting         ###   ########.fr       */
+/*   Updated: 2018/11/21 18:53:06 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar(char c);
-void    ft_print_numbers(void)
+int		ft_putchar(char c);
+
+void	ft_print_numbers(void)
 {
-	char ch = '0' - 1;
-	while(++ch<=9)
+	char digit;
+
+	digit = '0';
+	while (digit <= '9')
 	{
-		ft_putchar(ch);
+		ft_putchar(digit);
+		digit++;
 	}
 }

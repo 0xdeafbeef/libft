@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/ex06.dir/ft_print_alphabet.c.o CMakeFiles/ex06.dir/ft_putchar.c.o  -o ex06 

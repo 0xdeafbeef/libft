@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/21 16:49:26 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/21 19:05:51 by qhetting         ###   ########.fr       */
+/*   Created: 2018/11/21 16:59:39 by qhetting          #+#    #+#             */
+/*   Updated: 2018/11/21 19:10:41 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_sqrt(int nb)
+int		ft_strcmp(const char *s1, const char *s2)
 {
 	int i;
 
-	if (nb <= 0)
-		return (0);
-	if (nb == 1)
-		return (1);
 	i = 0;
-	while (i <= 46341 && i <= nb / 2)
-	{
-		if (i * i == nb)
-			return (i);
+	if (!(s1) || !(s2))
+		return (-1);
+	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
 		i++;
-	}
-	return (0);
+	return (s1[i] - s2[i]);
 }

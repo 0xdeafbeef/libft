@@ -1,29 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/21 16:49:26 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/21 19:05:51 by qhetting         ###   ########.fr       */
+/*   Created: 2018/11/21 17:02:37 by qhetting          #+#    #+#             */
+/*   Updated: 2018/11/21 17:33:28 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_sqrt(int nb)
+void	ft_putchar(char c);
+
+void	ft_putstr(char *str)
+{
+	int index;
+
+	index = 0;
+	while (str[index] != '\0')
+	{
+		ft_putchar(str[index]);
+		index++;
+	}
+}
+
+int		main(int argc, char **argv)
 {
 	int i;
 
-	if (nb <= 0)
-		return (0);
-	if (nb == 1)
-		return (1);
-	i = 0;
-	while (i <= 46341 && i <= nb / 2)
+	i = 1;
+	while (i < argc)
 	{
-		if (i * i == nb)
-			return (i);
-		i++;
+		ft_putstr(argv[i++]);
+		ft_putchar('\n');
 	}
 	return (0);
 }

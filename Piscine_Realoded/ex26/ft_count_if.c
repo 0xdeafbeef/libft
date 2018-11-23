@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/21 16:49:26 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/21 19:05:51 by qhetting         ###   ########.fr       */
+/*   Created: 2018/11/21 22:37:17 by qhetting          #+#    #+#             */
+/*   Updated: 2018/11/21 22:38:17 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_sqrt(int nb)
+int		ft_count_if(char **tab, int (*f)(char *))
 {
 	int i;
+	int counter;
 
-	if (nb <= 0)
-		return (0);
-	if (nb == 1)
-		return (1);
 	i = 0;
-	while (i <= 46341 && i <= nb / 2)
+	counter = 0;
+	while (tab[i])
 	{
-		if (i * i == nb)
-			return (i);
+		if (f(tab[i]))
+			counter++;
 		i++;
 	}
-	return (0);
+	return (counter);
 }

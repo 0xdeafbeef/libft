@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/21 16:49:26 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/21 19:05:51 by qhetting         ###   ########.fr       */
+/*   Created: 2018/11/21 16:53:19 by qhetting          #+#    #+#             */
+/*   Updated: 2018/11/21 19:09:51 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_sqrt(int nb)
+int		ft_strlen(char *str)
 {
-	int i;
+	int len;
 
-	if (nb <= 0)
-		return (0);
-	if (nb == 1)
-		return (1);
-	i = 0;
-	while (i <= 46341 && i <= nb / 2)
+	len = 0;
+	while (*str)
 	{
-		if (i * i == nb)
-			return (i);
-		i++;
+		str++;
+		len++;
 	}
-	return (0);
+	return (len);
 }
