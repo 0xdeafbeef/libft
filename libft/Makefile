@@ -18,7 +18,9 @@ FILES = 	atoi.c	\
 			memccpy.c \
 			strcpy.c \
 			memchr.c \
-			memmove.c
+			memmove.c \
+			strchr.c \
+			strrchr.c
 OBJ  = $(FILES:%.c=%.o)
 
 all: copy $(NAME)
@@ -42,7 +44,10 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+so: copy
+	gcc -Wall -fPIC -c $(FILES)
+	gcc -shared -Wl,-soname,libft.so -o libft.so	*.o
 
 # I use .PHONY to make sure that gnu make will still run even if files called
 # clean / fclean / all and re already exist in the directory
-.PHONY: clean fclean all re
+.PHONY: clean fclean all re so

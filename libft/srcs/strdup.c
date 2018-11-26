@@ -1,4 +1,3 @@
-#include <string.h>
 #include <stdlib.h>
 
 static size_t ft_strlen(const char *str)
@@ -19,10 +18,11 @@ char    * ft_strdup (const char *src)
 
     l = ft_strlen(src);
 	i =-1;
-	tmp = (char*)malloc(l * sizeof(char));
+	tmp = (char*)malloc(l + 1);
 	if(tmp == NULL)
 		return tmp;
 	while (++i < l)
-		*(tmp+i) = *(src + i);
+		*(tmp + i) = *(src + i);
+	*(tmp + i) = '\0';
 	return (tmp);
 }
