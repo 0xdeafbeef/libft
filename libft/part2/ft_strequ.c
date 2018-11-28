@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strclr.c                                        :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jrameau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/26 23:07:51 by jrameau           #+#    #+#             */
-/*   Updated: 2016/09/26 23:07:53 by jrameau          ###   ########.fr       */
+/*   Created: 2016/09/26 23:42:03 by jrameau           #+#    #+#             */
+/*   Updated: 2016/09/26 23:42:04 by jrameau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void	ft_strclr(char *s)
+int		ft_strequ(char const *s1, char const *s2)
 {
-	if (s)
-		ft_bzero(s, ft_strlen(s));
+	if (!s1 || !s2)
+		return (0);
+	return (ft_strcmp(s1, s2) ? 0 : 1);
 }

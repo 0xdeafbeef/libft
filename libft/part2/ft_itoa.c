@@ -1,24 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jrameau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/26 22:53:09 by jrameau           #+#    #+#             */
-/*   Updated: 2016/09/26 22:53:10 by jrameau          ###   ########.fr       */
+/*   Created: 2016/09/28 02:04:57 by jrameau           #+#    #+#             */
+/*   Updated: 2016/09/28 02:04:59 by jrameau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	*ft_strnew(size_t size)
+static size_t	get_str_len(int n)
 {
-	char	*str;
+	size_t		i;
 
-	str = (char *)malloc(sizeof(char) * size + 1);
-	if (!str)
+	i = 1;
+	while (n /= 10)
+		i++;
+	return (i);
+}
+
+char			*ft_itoa(int n)
+{
+	char			*str;
+	size_t			str_len;
+	unsigned int	n_cpy;
+
+	str_len = get_str_len(n);
+	n_cpy = n;
+	if (n < 0)
+	{
+		n_cpy = -n;
+		str_len++;
+	}
+	if (!(str = ft_strnew(str_len)))
 		return (NULL);
-	ft_bzero(str, size + 1);
+	str[--str_len] = n_cpy % 10 + '0';
+	while (n_cpy /= 10)
+		str[--str_len] = n_cpy % 10 + '0';
+	if (n < 0)
+		*(str + 0) = '-';
 	return (str);
 }

@@ -1,19 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strclr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jrameau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/26 23:07:51 by jrameau           #+#    #+#             */
-/*   Updated: 2016/09/26 23:07:53 by jrameau          ###   ########.fr       */
+/*   Created: 2016/09/26 23:22:13 by jrameau           #+#    #+#             */
+/*   Updated: 2016/09/26 23:22:15 by jrameau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void	ft_strclr(char *s)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	if (s)
-		ft_bzero(s, ft_strlen(s));
+	int		i;
+
+	i = -1;
+	if (s && f)
+		while (*(s + ++i))
+			f(i, s + i);
 }

@@ -1,19 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strclr.c                                        :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jrameau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/26 23:07:51 by jrameau           #+#    #+#             */
-/*   Updated: 2016/09/26 23:07:53 by jrameau          ###   ########.fr       */
+/*   Created: 2016/09/26 23:50:07 by jrameau           #+#    #+#             */
+/*   Updated: 2016/09/26 23:50:08 by jrameau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void	ft_strclr(char *s)
+char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	if (s)
-		ft_bzero(s, ft_strlen(s));
+	char	*new_str;
+	size_t	i;
+
+	if (!s)
+		return (NULL);
+	new_str = ft_strnew(len);
+	if (!new_str)
+		return (NULL);
+	i = 0;
+	while (i < len)
+		*(new_str + i++) = *(s + start++);
+	return (new_str);
 }
