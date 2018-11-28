@@ -6,7 +6,7 @@
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/27 17:57:40 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/27 19:38:10 by qhetting         ###   ########.fr       */
+/*   Updated: 2018/11/28 19:51:58 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void ft_putendl_fd(char const *s, int fd)
 {
-	ft_putchar_fd(*s, fd);
-	ft_putchar('\n');
+	if (s)
+	{
+		ft_putstr_fd(s, fd);
+		ft_putchar_fd('\n', fd);
+	}
 }
