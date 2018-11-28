@@ -1,25 +1,13 @@
 #include <string.h>
 #include "libft.h"
 
- char	*ft_strchr(const char *s, int c)
- {
-	size_t i;
-	char *ptr;
+char	*ft_strchr(const char *s, int c)
+{
+	int		i;
 
-	ptr = ft_strdup(s);
-	 i = 0;
-
-	if ((char)c == '\0')
-	{
-		while (*(ptr + i))
-			i++;
-		return (ptr + i);
-	}
-	while (*(s + i))
-	{
-		if (*(ptr + i) == (char)c)
-			return ((ptr + i));
-		i++;
-	}
+	i = -1;
+	while (++i < (int)ft_strlen(s) + 1)
+		if (*(s + i) == (char)c)
+			return ((char *)s + i);
 	return (NULL);
- }
+}
