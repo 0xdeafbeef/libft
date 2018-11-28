@@ -1,6 +1,6 @@
 
 NAME		= libft.a
-CFLAGS		= -Wall -Werror -Wextra -I. -c
+CFLAGS		= -Wall -Werror -Wextra -O3 -I. -c
 
 FILES = 	atoi.c	\
 			bzero.c \
@@ -20,13 +20,22 @@ FILES = 	atoi.c	\
 			memchr.c \
 			memmove.c \
 			strchr.c \
-			strrchr.c
+			strrchr.c \
+			memcmp.c \
+			strcmp.c \
+			strncmp.c \
+			strstr.c \
+			strcat.c \
+			strncat.c \
+			strlcat.c \
+			strncpy.c \
+			strnstr.c 
 OBJ  = $(FILES:%.c=%.o)
 
 all: copy $(NAME)
 
 copy:
-	cp -f srcs/*.c .
+	cp -f srcs/*.c srcs/*.h .
 
 # This won't run if the .o files don't exist or are not modified
 $(NAME): $(OBJ)
