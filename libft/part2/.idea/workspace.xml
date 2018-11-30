@@ -12,11 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c30ba210-33ef-49bb-a1cd-153132d0a9b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Clion_Fldr/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../atoi.c" beforeDir="false" afterPath="$PROJECT_DIR$/../atoi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bzero.c" beforeDir="false" afterPath="$PROJECT_DIR$/../bzero.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeCache.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
@@ -58,15 +54,14 @@
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/libft" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/libft.cbp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/liblibft.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isalpha.c" beforeDir="false" afterPath="$PROJECT_DIR$/../isalpha.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isalphanum.c" beforeDir="false" afterPath="$PROJECT_DIR$/../isalphanum.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isascii.c" beforeDir="false" afterPath="$PROJECT_DIR$/../isascii.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isdigit.c" beforeDir="false" afterPath="$PROJECT_DIR$/../isdigit.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isprint.c" beforeDir="false" afterPath="$PROJECT_DIR$/../isprint.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_itoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ft_itoa.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_itoa.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ft_itoa.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/../libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/../libft.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libft.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/../libft.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_itoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_itoa.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/../srcs/libft.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="273">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -90,11 +85,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ft_itoa.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+            <state relative-caret-position="356">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="e#892#910#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../strdup.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -111,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libft.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+            <state relative-caret-position="316">
+              <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -144,6 +148,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/libft.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/ft_itoa.c" />
       </list>
@@ -162,7 +167,22 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="part2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="part2" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="part2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="part2" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="part2" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -202,12 +222,12 @@
       <updated>1543589119388</updated>
       <workItem from="1543589127569" duration="32000" />
       <workItem from="1543589161172" duration="165000" />
-      <workItem from="1543589327967" duration="6920000" />
+      <workItem from="1543589327967" duration="10875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7117000" />
+    <option name="totallyTimeSpent" value="11072000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1028" y="139" width="1400" height="1000" extended-state="0" />
@@ -218,8 +238,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295964" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39910313" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295964" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -286,13 +306,6 @@
         <state relative-caret-position="-367" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libft.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ft_strmap.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-105" />
@@ -305,17 +318,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libft.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../strdup.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="273">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ft_itoa.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+        <state relative-caret-position="356">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
           <folding>
             <element signature="e#892#910#0" expanded="true" />
           </folding>

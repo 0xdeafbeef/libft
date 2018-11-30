@@ -36,15 +36,17 @@ int check_and_init(int *n, char **ret)
 	isnegative = 0;
 	if ((*n) > 0)
 	{
-		(*ret) = ft_strnew(ft_intlen((*n)));
+		(*ret) = ft_strnew((size_t) ft_intlen((*n)));
 		isnegative = 0;
 	} else if ((*n) < 0)
 	{
-		(*ret) = ft_strnew(ft_intlen((*n)) + 1);
+		(*ret) = ft_strnew((size_t) ft_intlen((*n)) + 1);
 		*(*ret) = '-';
 		(*n) *= -1;
 		isnegative = 1;
 	}
+	if (!*ret)
+		*ret = NULL;
 	return isnegative;
 }
 
@@ -55,31 +57,28 @@ char *ft_itoa(int n)
 
 	isnegative = check_and_init(&n, &ret);
 	if (n == -2147483648 || n == 0)
-		return (n == -2147483648 ? ft_strdup("-2147483648") : ft_strdup("0"));
-	ret += ft_intlen(n);
-	while (n)
 	{
-		*ret = (char) ((n % 10) + '0');
-		n /= 10;
-		ret--;
+		if (n == -2147483648)
+			ret = ft_strdup("-2147483648");
+		else
+			ret = ft_strdup("0");
+		return (ret == NULL ? NULL : ret);
 	}
-	if (isnegative)
+	if (ret == NULL)
 		return (ret);
-	else
-		return ++ret;
-}
-
-int main()
-{
-
-//	printf("%s\n", ft_itoa(1));
-//
-//	printf("%s\n", ft_itoa(-1));
-//	printf("%s\n", ft_itoa(-1488));
-//	printf("%s\n", ft_itoa(1488));
-//	printf("%s\n", ft_itoa(0));
-	printf("%i", INT_MIN);
-	printf("%s\n", ft_itoa(INT_MIN));
-	printf("%s\n", ft_itoa(INT_MAX));
-
+	if (ret)
+	{
+		ret += ft_intlen(n);
+		while (n)
+		{
+			*ret = (char) ((n % 10) + '0');
+			n /= 10;
+			ret--;
+		}
+		if (isnegative)
+			return (ret);
+		else
+			return ++ret;
+	} else
+		return (NULL);
 }

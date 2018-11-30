@@ -89,4 +89,6 @@ char				*ft_capitalize(char *s);
 char				*ft_strjoinch(char const *s1, char c);
 int					ft_cpyuntil(char **dst, char *src, char c);
 
+# define CHECKMALLOC(x) (x == NULL)?NULL:1
+
 #endif
