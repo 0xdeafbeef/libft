@@ -6,7 +6,7 @@
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 19:17:22 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/28 23:56:34 by qhetting         ###   ########.fr       */
+/*   Updated: 2018/11/30 17:54:54 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,10 +84,9 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 char				*ft_strndup(const char *s, size_t n);
-int					ft_absi(int a);
-long				ft_absl(int a);
-
-
-
+void				ft_foreach(int *tab, unsigned int length, void (*f)(int));
+char				*ft_capitalize(char *s);
+char				*ft_strjoinch(char const *s1, char c);
+int					ft_cpyuntil(char **dst, char *src, char c);
 
 #endif
