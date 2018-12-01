@@ -2,35 +2,35 @@
 NAME		= libft.a
 CFLAGS		= -Wall -Werror -Wextra  -I. -c
 
-FILES = 	atoi.c	\
-				bzero.c \
-				isalpha.c	\
-				isalphanum.c 	\
-				isascii.c			\
-				isdigit.c			\
-				isprint.c			\
+FILES = 	ft_atoi.c	\
+				ft_bzero.c \
+				ft_isalpha.c	\
+				ft_isalphanum.c 	\
+				ft_isascii.c		\
+				ft_isdigit.c		\
+				ft_isprint.c		\
 				libft.h				\
-				memccpy.c			\
-				memchr.c			\
-				memcmp.c			\
-				memcpy.c			\
-				memmove.c			\
-				memset.c			\
-				strcat.c			\
-				strchr.c			\
-				strcmp.c			\
-				strcpy.c			\
-				strdup.c			\
-				strlcat.c			\
-				strlen.c			\
-				strncat.c			\
-				strncmp.c			\
-				strncpy.c			\
-				strnstr.c			\
-				strrchr.c			\
-				strstr.c			\
-				tolower.c			\
-				toupper.c			\
+				ft_memccpy.c		\
+				ft_memchr.c			\
+				ft_memcmp.c			\
+				ft_memcpy.c			\
+				ft_memmove.c		\
+				ft_memset.c			\
+				ft_strcat.c			\
+				ft_strchr.c			\
+				ft_strcmp.c			\
+				ft_strcpy.c			\
+				ft_strdup.c			\
+				ft_strlcat.c		\
+				ft_strlen.c			\
+				ft_strncat.c		\
+				ft_strncmp.c		\
+				ft_strncpy.c		\
+				ft_strnstr.c		\
+				ft_strrchr.c		\
+				ft_strstr.c			\
+				ft_tolower.c		\
+				ft_toupper.c		\
 				ft_itoa.c			\
 				ft_memalloc.c		\
 				ft_memdel.c			\
@@ -52,8 +52,11 @@ FILES = 	atoi.c	\
 				ft_strmapi.c		\
 				ft_strnequ.c		\
 				ft_strnew.c			\
-				ft_strsub.c			
-				
+				ft_strsub.c			\
+				ft_strsplit.c 		\
+				ft_strtrim.c
+
+			
 OBJ  = $(FILES:%.c=%.o)
 
 all: copy $(NAME)

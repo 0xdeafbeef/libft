@@ -1,70 +1,63 @@
-#include <printf.h>
 #include <stdlib.h>
 #include "libft.h"
 
-int ft_count_delimited_words(const char *string, char delimiter)
+static int ft_cnt_parts(const char *s, char c)
 {
-	int word_counter;
+	int cnt;
+	int in_substring;
 
-	word_counter = 0;
-	if (string)
+	in_substring = 0;
+	cnt = 0;
+	while (*s != '\0')
 	{
-		while (*string)
+		if (in_substring == 1 && *s == c)
+			in_substring = 0;
+		if (in_substring == 0 && *s != c)
 		{
-			while (*string != delimiter)
-				string++;
-			while (*string == delimiter)
-				string++;
-			word_counter++;
+			in_substring = 1;
+			cnt++;
 		}
-		return (word_counter);
+		s++;
 	}
-	return (0);
+	return (cnt);
 }
 
-int word_len(const char *string, char delim)
+static int ft_wlen(const char *s, char c)
 {
-	const char *temp;
+	int len;
 
-	temp = string;
-	while (*string != delim)
-		string++;
-	return ((int) string - (int) temp);
-}
-
-static const char *get_string(const char *s, char *temp, int *i)
-{
-	*temp = *s;
-	temp++;
-	s++;
-	i++;
-	return s;
+	len = 0;
+	while (*s != c && *s != '\0')
+	{
+		len++;
+		s++;
+	}
+	return (len);
 }
 
 char **ft_strsplit(char const *s, char c)
 {
-	int i;
-	char *temp;
-	char *tmp_hand;
-	char **str2;
+	char **t;
+	int nb_word;
+	int index;
 
-	if (!s || !(str2 = (char **) malloc(sizeof(*str2) *
-										(ft_count_delimited_words(s, c) + 1))))
+	index = 0;
+	nb_word = ft_cnt_parts((const char *) s, c);
+	t = (char **) malloc(sizeof(*t) * (ft_cnt_parts((const char *) s, c) + 1));
+	if (t == NULL)
 		return (NULL);
-	i = -1;
-	while (*s)
-	{
-		temp = ft_strnew((size_t) word_len(s, c));
-		tmp_hand = temp;
-		if (temp)
-			while (*s != c)
-				temp = get_string(s, temp, &i);
-		str2[i] = tmp_hand;
-		
-	}
-}
 
-int main()
-{
-	printf("%i", ft_count_delimited_words("aa aa aa aa aaaaa aa a a a", ' '));
+
+	while (nb_word--)
+	{
+		while (*s == c && *s != '\0')
+		s++;
+		t[index] = ft_strsub((const char *) s, 0, ft_wlen((const char *) s, c));
+		if (t[index] == NULL)
+			return (NULL);
+		s = s + ft_wlen(s, c);
+		index++;
+	}
+	t[index] = NULL;
+	return (t);
 }

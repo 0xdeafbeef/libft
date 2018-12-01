@@ -12,8 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c30ba210-33ef-49bb-a1cd-153132d0a9b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ft_strsplit.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ft_strtrim.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Clion_Fldr/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atoi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atoi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bzero.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeCache.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
@@ -57,11 +61,93 @@
       <change beforePath="$PROJECT_DIR$/../cmake-build-debug/liblibft.a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ft_itoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ft_itoa.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ft_itoa.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ft_itoa.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ft_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ft_strsplit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isalpha.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isalpha.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isalphanum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isalphanum.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isascii.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isascii.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isdigit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isdigit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isprint.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isprint.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/../libft.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libft.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/../libft.h.gch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../library.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memccpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memccpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memmove.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memmove.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memset.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_strsplit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/atoi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/bzero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/isalpha.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/isalphanum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/isascii.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/isdigit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/isprint.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/memccpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/memchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/memcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/memcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/memmove.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/memset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strdup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strlcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strncat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strncmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strncpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strnstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strrchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/strstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/tolower.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/toupper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strdup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strdup.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strlcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strlcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strlen.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strncat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strncat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strncmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strncmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strncpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strncpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strnstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strnstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strrchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strrchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../strstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tolower.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tolower.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toupper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../toupper.o" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,29 +162,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="252">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ft_itoa.c">
+        <entry file="file://$PROJECT_DIR$/ft_strsplit.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1743">
-              <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
-              <folding>
-                <element signature="e#892#910#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="108">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ft_strsplit.c">
+        <entry file="file://$PROJECT_DIR$/ft_strtrim.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+            <state relative-caret-position="-80">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -107,10 +190,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ft_strlen.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ft_strnew.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="1" selection-start-line="14" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="462">
+              <caret line="22" column="12" selection-start-line="14" selection-end-line="23" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -152,12 +244,13 @@
         <option value="$PROJECT_DIR$/ft_itoa.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/ft_strsplit.c" />
+        <option value="$PROJECT_DIR$/ft_strtrim.c" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1028" />
-    <option name="y" value="139" />
+    <option name="x" value="1079" />
+    <option name="y" value="152" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -167,15 +260,31 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="part2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="part2" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="part2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="part2" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="part2" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -209,23 +318,25 @@
       <workItem from="1543589127569" duration="32000" />
       <workItem from="1543589161172" duration="165000" />
       <workItem from="1543589327967" duration="12802000" />
-      <workItem from="1543603922108" duration="3050000" />
+      <workItem from="1543603922108" duration="3101000" />
+      <workItem from="1543670951031" duration="3869000" />
+      <workItem from="1543675513989" duration="5103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16049000" />
+    <option name="totallyTimeSpent" value="25072000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1028" y="139" width="1400" height="1000" extended-state="0" />
+    <frame x="1079" y="152" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26067746" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26804122" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295964" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -248,33 +359,72 @@
     <option name="version" value="1" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ft_strsplit.c</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="*ret" language="ObjectiveC" />
-        <watch expression="n" language="ObjectiveC" />
-        <watch expression="*(ret + 1)" language="ObjectiveC" />
+        <watch expression="(k+j)-(size_t)s" language="ObjectiveC" />
+        <watch expression="(*j - *i + 1)" language="ObjectiveC" />
+        <watch expression="*i" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>*(ret + 1)</expression-string>
+        <expression-string>*i</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>*(ret - 1)</expression-string>
+        <expression-string>(*j - *i + 1)</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>n</expression-string>
+        <expression-string>(k+j)-(size_t)s</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>*ret</expression-string>
+        <expression-string>(k+j)</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s[*j]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s[*i +7]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s[*i]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tmp_hand[1]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tmp_hand[0]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tmp_hand</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -288,23 +438,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../strdup.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../strdup.c" />
     <entry file="file://$PROJECT_DIR$/ft_itoa.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1743">
+        <state relative-caret-position="490">
           <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
           <folding>
             <element signature="e#892#910#0" expanded="true" />
@@ -312,10 +449,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include/opencl-c.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="12549" selection-start-line="12549" selection-end-line="12549" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ft_bzero.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/ft_strnew.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="1" selection-start-line="14" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="462">
+          <caret line="22" column="12" selection-start-line="14" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -332,10 +479,31 @@
     <entry file="file://$PROJECT_DIR$/ft_strjoin.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ft_strlen.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ft_strsplit.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+        <state relative-caret-position="108">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ft_strtrim.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
