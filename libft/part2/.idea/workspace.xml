@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="part2" targetName="part2" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -12,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c30ba210-33ef-49bb-a1cd-153132d0a9b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ft_strtrim.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Clion_Fldr/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../atoi.c" beforeDir="false" />
@@ -73,7 +70,9 @@
       <change beforePath="$PROJECT_DIR$/../isprint.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../isprint.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/../libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/../libft.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../libft.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/../libft.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../libft.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../library.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../memccpy.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../memccpy.o" beforeDir="false" />
@@ -87,37 +86,10 @@
       <change beforePath="$PROJECT_DIR$/../memmove.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../memset.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../memset.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_strsplit.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/atoi.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/bzero.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/isalpha.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/isalphanum.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/isascii.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/isdigit.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/isprint.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/memccpy.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/memchr.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/memcmp.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/memcpy.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/memmove.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/memset.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strcat.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strchr.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strcmp.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strcpy.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strdup.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strlcat.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strlen.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strncat.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strncmp.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strncpy.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strnstr.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strrchr.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/strstr.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/tolower.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../srcs/toupper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bzero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/ft_isalphanum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../srcs/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/../srcs/libft.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../strcat.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../strcat.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../strchr.c" beforeDir="false" />
@@ -156,18 +128,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ft_strsplit.c">
           <provider selected="true" editor-type-id="text-editor">
@@ -180,8 +142,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ft_strtrim.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-80">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state relative-caret-position="-321">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -261,22 +223,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="part2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="part2" type="47feb1d3:ProjectViewModuleNode" />
-            </path>
-            <path>
-              <item name="part2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="part2" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="part2" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,13 +245,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="part2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="part2" TARGET_NAME="part2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="part2" RUN_TARGET_NAME="part2">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -320,12 +260,12 @@
       <workItem from="1543589327967" duration="12802000" />
       <workItem from="1543603922108" duration="3101000" />
       <workItem from="1543670951031" duration="3869000" />
-      <workItem from="1543675513989" duration="5103000" />
+      <workItem from="1543675513989" duration="5495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25072000" />
+    <option name="totallyTimeSpent" value="25464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1079" y="152" width="1400" height="1000" extended-state="0" />
@@ -336,7 +276,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295964" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -345,7 +285,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.3295964" />
+      <window_info active="true" anchor="bottom" id="CMake" order="11" visible="true" weight="0.3295964" />
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.3295964" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3295964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -502,8 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ft_strtrim.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        <state relative-caret-position="-321">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

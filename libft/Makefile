@@ -5,7 +5,7 @@ CFLAGS		= -Wall -Werror -Wextra  -I. -c
 FILES = 	ft_atoi.c	\
 				ft_bzero.c \
 				ft_isalpha.c	\
-				ft_isalphanum.c 	\
+				ft_isalnum.c 	\
 				ft_isascii.c		\
 				ft_isdigit.c		\
 				ft_isprint.c		\
@@ -76,14 +76,12 @@ $(OBJ): $(FILES)
 clean:
 	@rm -f $(OBJ)
 	@rm -f $(FILES) # comment this line if you don't want it to remove the source files from the root
+	@rm -f *.gch
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-so: copy
-	gcc -Wall -fPIC -c $(FILES)
-	gcc -shared -Wl,-soname,libft.so -o libft.so	*.o
 
 # I use .PHONY to make sure that gnu make will still run even if files called
 # clean / fclean / all and re already exist in the directory
