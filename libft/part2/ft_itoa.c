@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jrameau <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/28 02:04:57 by jrameau           #+#    #+#             */
-/*   Updated: 2016/09/28 02:04:59 by jrameau          ###   ########.fr       */
+/*   Updated: 2018/12/02 18:36:17 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
-#include <printf.h>
-#include <limits.h>
 
-static int ft_intlen(int n)
+static int		ft_intlen(int n)
 {
 	int i;
 
@@ -26,59 +24,72 @@ static int ft_intlen(int n)
 		n /= 10;
 		i++;
 	}
-	return i;
+	return (i);
 }
 
-int check_and_init(int *n, char **ret)
+static int		check_and_init(int *n, char **ret)
 {
 	int isnegative;
 
 	isnegative = 0;
 	if ((*n) > 0)
 	{
-		(*ret) = ft_strnew((size_t) ft_intlen((*n)));
+		(*ret) = ft_strnew((size_t)ft_intlen((*n)));
 		isnegative = 0;
-	} else if ((*n) < 0)
+	}
+	else if ((*n) < 0)
 	{
-		(*ret) = ft_strnew((size_t) ft_intlen((*n)) + 1);
-		*(*ret) = '-';
-		(*n) *= -1;
-		isnegative = 1;
+		(*ret) = ft_strnew((size_t)ft_intlen((*n)) + 1);
+		if (!*ret)
+			*ret = NULL;
+		else
+		{
+			*(*ret) = '-';
+			(*n) *= -1;
+			isnegative = 1;
+		}
 	}
 	if (!*ret)
 		*ret = NULL;
-	return isnegative;
+	return (isnegative);
 }
 
-char *ft_itoa(int n)
+static char		*getstring(int n)
 {
-	int isnegative;
 	char *ret;
 
-	isnegative = check_and_init(&n, &ret);
+	if (n == -2147483648)
+		ret = ft_strdup("-2147483648");
+	else
+		ret = ft_strdup("0");
+	return (ret);
+}
+
+char			*ft_itoa(int n)
+{
+	int		isnegative;
+	char	*ret;
+
 	if (n == -2147483648 || n == 0)
 	{
-		if (n == -2147483648)
-			ret = ft_strdup("-2147483648");
-		else
-			ret = ft_strdup("0");
+		ret = getstring(n);
 		return (ret == NULL ? NULL : ret);
 	}
-	if (ret == NULL)
-		return (ret);
+	isnegative = check_and_init(&n, &ret);
 	if (ret)
 	{
 		ret += ft_intlen(n);
 		while (n)
 		{
-			*ret = (char) ((n % 10) + '0');
+			*ret = (char)((n % 10) + '0');
 			n /= 10;
 			ret--;
 		}
 		if (isnegative)
 			return (ret);
 		else
-			return ++ret;
-	} else
+			return (++ret);
+	}
+	else
 		return (NULL);
 }
