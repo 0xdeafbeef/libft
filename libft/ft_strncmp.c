@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/28 19:22:59 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/02 18:38:57 by qhetting         ###   ########.fr       */
+/*   Created: 2018/11/26 18:06:34 by qhetting          #+#    #+#             */
+/*   Updated: 2018/12/02 21:03:21 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include <string.h>
 
-void	ft_putchar(char c)
+int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	write(1, &c, 1);
+	while (n && *s1 && (*s1 == *s2))
+	{
+		s1++;
+		s2++;
+		n--;
+	}
+	return (n) ? (*(const unsigned char *)s1 - *(const unsigned char *)s2) : 0;
 }

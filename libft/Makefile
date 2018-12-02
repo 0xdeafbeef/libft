@@ -1,7 +1,6 @@
 
-NAME		= libft.a
-CFLAGS		= -Wall -Werror -Wextra  -I. -c
-
+COMPILE_FLAG = -Wall -Wextra -Werror -I. -c
+NAME = libft.a
 FILES = 	ft_atoi.c	\
 				ft_bzero.c \
 				ft_isalpha.c	\
@@ -9,7 +8,6 @@ FILES = 	ft_atoi.c	\
 				ft_isascii.c		\
 				ft_isdigit.c		\
 				ft_isprint.c		\
-				libft.h				\
 				ft_memccpy.c		\
 				ft_memchr.c			\
 				ft_memcmp.c			\
@@ -56,33 +54,25 @@ FILES = 	ft_atoi.c	\
 				ft_strsplit.c 		\
 				ft_strtrim.c
 
-			
-OBJ  = $(FILES:%.c=%.o)
 
-all: copy $(NAME)
+OBJ	= $(FILES:%.c=%.o)
 
-copy:
-	cp -f srcs/*.c srcs/*.h .
-	cp -f part2/*.c .
 
-# This won't run if the .o files don't exist or are not modified
+
+all: $(NAME)
+
 $(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
+		ar rcs $(NAME) $(OBJ)
 
-# This won't run if the source files don't exist or are not modified
 $(OBJ): $(FILES)
-	gcc $(CFLAGS) $(FILES)
+		gcc $(COMPILE_FLAG) $(FILES)
 
 clean:
-	@rm -f $(OBJ)
-	@rm -f $(FILES) # comment this line if you don't want it to remove the source files from the root
-	@rm -f *.gch
+		rm -f $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
+		rm -f $(NAME)
 
 re: fclean all
 
-# I use .PHONY to make sure that gnu make will still run even if files called
-# clean / fclean / all and re already exist in the directory
-.PHONY: clean fclean all re so
+.PHONY: clean fclean all re

@@ -6,67 +6,65 @@
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/02 19:05:01 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/02 19:07:40 by qhetting         ###   ########.fr       */
+/*   Updated: 2018/12/02 19:33:44 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_cnt_parts(const char *s, char c)
+static char			*ft_strndup(const char *s, size_t n)
 {
-	int			cnt;
-	int			in_substring;
+	char			*str;
 
-	in_substring = 0;
-	cnt = 0;
-	while (*s != '\0')
-	{
-		if (in_substring == 1 && *s == c)
-			in_substring = 0;
-		if (in_substring == 0 && *s != c)
-		{
-			in_substring = 1;
-			cnt++;
-		}
-		s++;
-	}
-	return (cnt);
-}
-
-static int		ft_wlen(const char *s, char c)
-{
-	int			len;
-
-	len = 0;
-	while (*s != c && *s != '\0')
-	{
-		len++;
-		s++;
-	}
-	return (len);
-}
-
-char			**ft_strsplit(char const *s, char c)
-{
-	char		**t;
-	int			nb_word;
-	int			index;
-
-	index = 0;
-	nb_word = ft_cnt_parts((const char *)s, c);
-	t = (char **)malloc(sizeof(*t) * (ft_cnt_parts((const char *)s, c) + 1));
-	if (t == NULL)
+	if (!(str = (char *)malloc(sizeof(char) * n + 1)))
 		return (NULL);
-	while (nb_word--)
+	str = ft_strncpy(str, s, n);
+	str[n] = '\0';
+	return (str);
+}
+
+static int			ft_cntwrd(char const *s, char c)
+{
+	unsigned int	i;
+	int				cntr;
+
+	i = 0;
+	cntr = 0;
+	while (s[i])
 	{
-		while (*s == c && *s != '\0')
-			s++;
-		t[index] = ft_strsub((const char *)s, 0, ft_wlen((const char *)s, c));
-		if (t[index] == NULL)
-			return (NULL);
-		s = s + ft_wlen(s, c);
-		index++;
+		while (s[i] == c)
+			i++;
+		if (s[i] != '\0')
+			cntr++;
+		while (s[i] && (s[i] != c))
+			i++;
 	}
-	t[index] = NULL;
-	return (t);
+	return (cntr);
+}
+
+char				**ft_strsplit(char const *s, char c)
+{
+	int				i;
+	int				j;
+	int				k;
+	char			**tab;
+
+	if (!s || !c)
+		return (NULL);
+	i = 0;
+	k = 0;
+	if (!(tab = (char **)malloc(sizeof(char *) * (ft_cntwrd(s, c)) + 1)))
+		return (NULL);
+	while (s[i])
+	{
+		while (s[i] == c)
+			i++;
+		j = i;
+		while (s[i] && s[i] != c)
+			i++;
+		if (i > j)
+			(tab[k] = ft_strndup(s + j, i - j)) && (k++);
+	}
+	tab[k] = NULL;
+	return (tab);
 }

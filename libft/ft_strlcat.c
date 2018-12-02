@@ -1,22 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/27 17:57:40 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/02 18:39:36 by qhetting         ###   ########.fr       */
+/*   Created: 2018/12/02 17:27:10 by qhetting          #+#    #+#             */
+/*   Updated: 2018/12/02 17:27:59 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char const *s, int fd)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	if (s)
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	index;
+	char	*tempo;
+
+	src_len = ft_strlen(src);
+	index = 0;
+	dst_len = ft_strlen(dst);
+	if (size < dst_len + 1)
+		return (size + src_len);
+	tempo = dst;
+	while (*dst)
+		dst++;
+	size -= dst_len;
+	while (size > 1 && *src)
 	{
-		ft_putstr_fd(s, fd);
-		ft_putchar_fd('\n', fd);
+		*dst = *src;
+		dst++;
+		src++;
+		size--;
 	}
+	*dst = '\0';
+	dst = tempo;
+	return (dst_len + src_len);
 }

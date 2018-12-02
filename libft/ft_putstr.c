@@ -6,14 +6,14 @@
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 19:40:57 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/28 19:45:09 by qhetting         ###   ########.fr       */
+/*   Updated: 2018/12/02 18:55:14 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr(char const *s)
-{	
+void	ft_putstr(char const *s)
+{
 	if (s)
 	{
 		while (*s)

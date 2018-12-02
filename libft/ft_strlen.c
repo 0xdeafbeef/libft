@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/28 19:22:59 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/02 18:38:57 by qhetting         ###   ########.fr       */
+/*   Created: 2018/12/02 17:28:07 by qhetting          #+#    #+#             */
+/*   Updated: 2018/12/02 17:28:33 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-void	ft_putchar(char c)
+size_t	ft_strlen(const char *str)
 {
-	write(1, &c, 1);
+	size_t i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }

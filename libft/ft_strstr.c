@@ -1,22 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/27 17:57:40 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/02 18:39:36 by qhetting         ###   ########.fr       */
+/*   Created: 2018/11/26 18:38:26 by qhetting          #+#    #+#             */
+/*   Updated: 2018/12/02 17:47:53 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char const *s, int fd)
+char	*ft_strstr(const char *str, const char *substring)
 {
-	if (s)
+	int i;
+	int j;
+	int flag;
+	int k;
+
+	if (!ft_strlen(substring))
+		return ((char *)str);
+	i = -1;
+	flag = 0;
+	while (*(str + ++i) && !flag)
 	{
-		ft_putstr_fd(s, fd);
-		ft_putchar_fd('\n', fd);
+		if (*(str + i) == *(substring))
+		{
+			j = 0;
+			k = i;
+			flag = 1;
+			while (*(substring + j))
+				if (*(substring + j++) != *(str + k++))
+					flag = 0;
+			if (flag)
+				return ((char *)str + i);
+		}
 	}
+	return (0);
 }

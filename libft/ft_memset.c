@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/28 19:22:59 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/02 18:38:57 by qhetting         ###   ########.fr       */
+/*   Created: 2018/12/02 17:07:46 by qhetting          #+#    #+#             */
+/*   Updated: 2018/12/02 18:24:19 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include <string.h>
 
-void	ft_putchar(char c)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	write(1, &c, 1);
+	unsigned char	*ptr_handler;
+	size_t			i;
+
+	i = 0;
+	ptr_handler = (unsigned char *)s;
+	while (i < n)
+	{
+		*(ptr_handler + i++) = (unsigned char)c;
+	}
+	return (s);
 }
