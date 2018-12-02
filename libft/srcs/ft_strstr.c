@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strstr.c                                           :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 18:38:26 by qhetting          #+#    #+#             */
-/*   Updated: 2018/11/26 19:38:10 by qhetting         ###   ########.fr       */
+/*   Updated: 2018/12/02 17:47:53 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strstr(const char *str, const char *substring)
+char	*ft_strstr(const char *str, const char *substring)
 {
 	int i;
 	int j;
@@ -20,7 +20,7 @@ char *ft_strstr(const char *str, const char *substring)
 	int k;
 
 	if (!ft_strlen(substring))
-		return ((char *) str);
+		return ((char *)str);
 	i = -1;
 	flag = 0;
 	while (*(str + ++i) && !flag)
@@ -34,7 +34,7 @@ char *ft_strstr(const char *str, const char *substring)
 				if (*(substring + j++) != *(str + k++))
 					flag = 0;
 			if (flag)
-				return ((char *) str + i);
+				return ((char *)str + i);
 		}
 	}
 	return (0);
