@@ -1,3 +1,0 @@
-/home/odm3n/Documents/42/libft/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/odm3n/Documents/42/libft/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/odm3n/Documents/42/libft/cmake-build-debug/CMakeFiles/libft.dir

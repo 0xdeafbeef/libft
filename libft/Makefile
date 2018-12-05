@@ -52,7 +52,14 @@ FILES = 	ft_atoi.c	\
 				ft_strnew.c			\
 				ft_strsub.c			\
 				ft_strsplit.c 		\
-				ft_strtrim.c
+				ft_strtrim.c        \
+				ft_lstnew.c			\
+				ft_lstdelone.c		\
+				ft_lstdel.c			\
+				ft_lstadd.c			\
+				ft_lstiter.c		\
+				ft_lstmap.c			\
+
 
 
 OBJ	= $(FILES:%.c=%.o)
