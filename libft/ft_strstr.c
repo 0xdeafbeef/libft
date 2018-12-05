@@ -37,5 +37,5 @@ char	*ft_strstr(const char *str, const char *substring)
 				return ((char *)str + i);
 		}
 	}
-	return (0);
+	return (NULL);
 }
