@@ -6,10 +6,11 @@
 /*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/02 19:08:26 by qhetting          #+#    #+#             */
-/*   Updated: 2018/12/02 19:40:32 by qhetting         ###   ########.fr       */
+/*   Updated: 2018/12/07 20:38:15 by qhetting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <printf.h>
 #include "libft.h"
 
 static int			wordlen(const char *s, int *i, int *j)

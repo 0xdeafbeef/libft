@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <libft.h>
+#include <printf.h>
 
 static int		ft_intlen(int n)
 {
