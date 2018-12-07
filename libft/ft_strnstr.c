@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <printf.h>
 #include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
@@ -18,6 +19,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t haylen;
 
 	haylen = ft_strnlen(haystack, len);
+	if (ft_strnlen(haystack, len) < ft_strlen(needle))
+		return (NULL);
 	i = 0;
 	if (0 == (ft_strnlen(needle, len)))
 		return ((char *)haystack);
