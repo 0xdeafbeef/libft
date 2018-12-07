@@ -14,30 +14,25 @@
 
 char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int i;
-	size_t needle_len;
+	size_t i;
+	size_t haylen;
 
+	haylen = ft_strnlen(haystack,len);
 	i = 0;
-	if (0 == (needle_len = ft_strnlen(needle, len)))
+	if (0 == (ft_strnlen(needle, len)))
 		return (char *) haystack;
-	while (i <= (int)(len -needle_len) && (*haystack))
+	if (ft_strlen(needle) > len && ft_strlen(needle) > ft_strlen(haystack))
+		return (NULL);
+	while (i < haylen)
 	{
-		if ((*haystack == *needle) && (0 == strncmp(haystack, needle,
-				needle_len + 1 )))
-			return (char *) haystack;
+ 		if (*haystack == *needle &&
+			ft_strncmp(haystack, needle, ft_strnlen(needle, len)) == 0 &&
+			((haylen - i) >=
+			ft_strnlen(needle,len)))
+			return (char *) (haystack);
 		haystack++;
 		i++;
 	}
+
 	return (NULL);
-}
-int main()
-{
-	char *big = "abc";
-	char *little = "abcdefghijklmnop";
-	size_t max = strlen(big);
-	char *s1 = strnstr(big, little, max);
-	char *s2 = ft_strnstr(big, little, max);
-	char *s3 = strstr(big, little);
-	if (s1 == s2)
-		ft_putstr("top");
 }
