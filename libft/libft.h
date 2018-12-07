@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qhetting <qhetting@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/12/07 18:56:17 by qhetting          #+#    #+#             */
+/*   Updated: 2018/12/07 18:56:57 by qhetting         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -74,6 +85,6 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_foreach(int *tab, unsigned int length, void (*f)(int));
 char				*ft_capitalize(char *s);
-size_t 				ft_strnlen(const char *s, size_t maxlen);
+size_t				ft_strnlen(const char *s, size_t maxlen);
 
 #endif
